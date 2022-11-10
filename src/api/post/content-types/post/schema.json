@@ -31,11 +31,20 @@
       "inversedBy": "posts"
     },
     "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "thumbnail": {
       "allowedTypes": [
         "images"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false,
+      "required": true
     }
   }
 }

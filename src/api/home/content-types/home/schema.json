@@ -20,13 +20,14 @@
       "type": "uid",
       "required": true
     },
-    "welcomeText": {
-      "type": "text"
-    },
     "posts": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::post.post"
+    },
+    "introText": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
