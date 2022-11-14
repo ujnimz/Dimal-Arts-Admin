@@ -28,6 +28,11 @@
     "introText": {
       "type": "richtext",
       "required": true
+    },
+    "seoMeta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo-meta"
     }
   }
 }

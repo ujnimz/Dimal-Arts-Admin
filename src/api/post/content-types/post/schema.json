@@ -21,9 +21,6 @@
       "required": true,
       "targetField": "title"
     },
-    "description": {
-      "type": "text"
-    },
     "categories": {
       "type": "relation",
       "relation": "manyToMany",
@@ -39,12 +36,23 @@
       ]
     },
     "thumbnail": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "seoMeta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo-meta"
+    },
+    "introText": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

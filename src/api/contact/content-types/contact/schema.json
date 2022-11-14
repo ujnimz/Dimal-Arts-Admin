@@ -4,7 +4,8 @@
   "info": {
     "singularName": "contact",
     "pluralName": "contacts",
-    "displayName": "Contact"
+    "displayName": "Contact",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,9 +21,6 @@
       "targetField": "title",
       "required": true
     },
-    "description": {
-      "type": "string"
-    },
     "contactEmail": {
       "type": "email",
       "required": true
@@ -32,12 +30,24 @@
       "required": true
     },
     "pageImage": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "introText": {
+      "type": "richtext",
       "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "seoMeta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo-meta"
     }
   }
 }
